@@ -1,0 +1,14 @@
+{
+    "title": "cs.tts.elhuyar",
+    "description": "An addon offering TTS using Elhuyar services",
+    "author": "CodeSyntax",
+    "email": "plone@codesyntax.com",
+    "github_organization": "codesyntax",
+    "use_prerelease_versions": "No",
+    "plone_version": "6.2.2",
+    "python_package_name": "cs.tts.elhuyar",
+    "feature_headless": false,
+    "initialize_ci": false,
+    "initialize_documentation": false,
+    "__template__": "backend_addon"
+}
