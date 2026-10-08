@@ -21,4 +21,6 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
+  <include package=".viewlets" />
+
 </configure>
