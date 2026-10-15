@@ -1,0 +1,8 @@
+<script id="tts-barra-js">
+window.TTS_berezia_param = {
+    irakurtzekoa_xpath: "//main[@id='content']"
+};
+</script>
+
+
+<script id="tts-barra-js-load" src="https://ttsneuronala.elhuyar.eus/static/barrak/barra-irisgarria-multi/tts-component.js"></script>

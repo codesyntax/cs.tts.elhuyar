@@ -2,19 +2,30 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:plone="http://namespaces.plone.org/plone"
-    i18n_domain="cs.tts.elhuyar">
+    i18n_domain="cs.tts.elhuyar"
+    >
 
- <!-- -*- extra stuff goes here -*- -->
+  <!-- -*- extra stuff goes here -*- -->
 
   <browser:viewlet
-     name="cs-tts-elhuyar-viewlet"
-     for="plone.app.contenttypes.interfaces.IDocument"
-     manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
-     layer="cs.tts.elhuyar.interfaces.IBrowserLayer"
-     class=".cs_tts_elhuyar_viewlet.CSTTSElhuyarViewlet"
-     template="cs_tts_elhuyar_viewlet.pt"
-     permission="zope2.View"
-     />
+      name="cs-tts-elhuyar-bar-viewlet"
+      for="*"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+      class=".cs_tts_elhuyar_viewlet.CSTTSElhuyarViewlet"
+      template="cs_tts_elhuyar_bar_viewlet.pt"
+      permission="zope2.View"
+      layer="cs.tts.elhuyar.interfaces.IBrowserLayer"
+      />
+
+  <browser:viewlet
+      name="cs-tts-elhuyar-viewlet"
+      for="*"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class=".cs_tts_elhuyar_viewlet.CSTTSElhuyarViewlet"
+      template="cs_tts_elhuyar_js_viewlet.pt"
+      permission="zope2.View"
+      layer="cs.tts.elhuyar.interfaces.IBrowserLayer"
+      />
 
 
 </configure>
